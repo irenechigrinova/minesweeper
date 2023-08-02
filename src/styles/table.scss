@@ -1,0 +1,84 @@
+.item {
+  outline: unset;
+  border: unset;
+  background-color: silver;
+  background-repeat: no-repeat;
+  background-image: url("./assets/images/sprites.png");
+  background-size: 290px;
+  background-position: 1px -106px;
+
+  &.mine {
+    background-position: -171px -102px;
+    background-size: 280px;
+  }
+
+  &.empty {
+    background-position: -34px -102px;
+    background-size: 280px;
+  }
+
+  &.question {
+    background-position: -105px -106px;
+    background-size: 290px;
+  }
+
+  &.mine-mark {
+    background-position: -68px -104px;
+    background-size: 285px;
+  }
+
+  &.mine-boom {
+    background-position: -204px -102px;
+    background-size: 280px;
+  }
+
+  &.mine-fail {
+    background-position: -239px -102px;
+    background-size: 280px;
+  }
+
+  &.value-1 {
+    background-position: 1px -141px;
+    background-size: 290px
+  }
+
+  &.value-2 {
+    background-position: -34px -141px;
+    background-size: 290px
+  }
+
+  &.value-3 {
+    background-position: -70px -141px;
+    background-size: 290px
+  }
+
+  &.value-4 {
+    background-position: -105px -141px;
+    background-size: 290px
+  }
+
+  &.value-5 {
+    background-position: -141px -141px;
+    background-size: 290px
+  }
+
+  &.value-6 {
+    background-position: -176px -141px;
+    background-size: 290px
+  }
+
+  &.value-7 {
+    background-position: -212px -141px;
+    background-size: 290px
+  }
+
+  &.value-8 {
+    background-position: -247px -141px;
+    background-size: 290px
+  }
+}
+
+.table {
+  display: grid;
+  margin-top: 16px;
+}

@@ -1,0 +1,88 @@
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+
+  & .number {
+    display: flex;
+
+    div {
+      width: 17px;
+      height: 29px;
+      background-repeat: no-repeat;
+      background-image: url("./assets/images/sprites.png");
+      background-size: 172px;
+
+      &.num-0 {
+        background-position: -156px 0px;
+      }
+      &.num-1 {
+        background-position: 0px 0px;
+      }
+      &.num-2 {
+        background-position: -17px 0px;
+      }
+      &.num-3 {
+        background-position: -34px 0px;
+      }
+      &.num-4 {
+        background-position: -52px 0px;
+      }
+      &.num-5 {
+        background-position: -69px 0px;
+      }
+      &.num-6 {
+        background-position: -86px 0px;
+      }
+      &.num-7 {
+        background-position: -104px 0px;
+      }
+      &.num-8 {
+        background-position: -121px 0px;
+      }
+      &.num-9 {
+        background-position: -138px 0px;
+      }
+    }
+
+    div:nth-child(2) {
+      position: relative;
+      left: -1px;
+    }
+
+    div:last-of-type {
+      position: relative;
+      left: -3px;
+    }
+  }
+
+  & button {
+    border: unset;
+    outline: unset;
+    width: 27px;
+    height: 27px;
+    background-image: url("./assets/images/sprites.png");
+    background-position: -1px -27px;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    position: relative;
+    top: 1px;
+
+    &.down {
+      background-position: -59px -27px;
+    }
+
+    &.fail {
+      background-position: -118px -27px;
+    }
+
+    &.success {
+      background-position: -88px -27px;
+    }
+
+    &:active {
+      background-position: -30px -27px;
+    }
+  }
+}

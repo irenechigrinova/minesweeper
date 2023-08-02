@@ -1,2 +1,2 @@
 # minesweeper
-Classic minesweeper game
+Classic minesweeper game in pure js
