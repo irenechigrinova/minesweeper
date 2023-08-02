@@ -1,7 +1,7 @@
 {
-  "name": "@hexlet/code",
+  "name": "minesweeper",
   "version": "1.0.0",
-  "description": "RSS Aggregator",
+  "description": "Minesweeper classic game",
   "scripts": {
     "dev": "npx webpack serve",
     "build": "cross-env NODE_ENV=production webpack --mode production",
