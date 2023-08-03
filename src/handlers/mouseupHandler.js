@@ -16,16 +16,16 @@ const getNeighbours = (key, used) => {
 };
 
 const getEmptyArea = (start, data) => {
-  const queue = [start];
+  const stack = [start];
   const items = [];
   const used = new Set();
-  while (queue.length) {
-    const current = queue.shift();
+  while (stack.length) {
+    const current = stack.pop();
     const item = data.get(current);
     if (item) {
       if (item.isEmpty) {
         items.push(current);
-        queue.push(...getNeighbours(current, used));
+        stack.push(...getNeighbours(current, used));
       }
       if (item.value) {
         items.push(current);
